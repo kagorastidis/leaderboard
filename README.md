@@ -1,4 +1,4 @@
-# My own version o Leaderboard Meteor app
+# My own version of Leaderboard Meteor app
 
 I m trying to learn Meteor.js and I made this app following the tutotial on <a href="http://meteortips.com/first-meteor-tutorial/" target="_blank"> MeteorTips</a>
 
