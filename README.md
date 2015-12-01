@@ -2,7 +2,7 @@
 
 I m trying to learn Meteor.js and I made this app following the tutotial on <a href="http://meteortips.com/first-meteor-tutorial/" target="_blank"> MeteorTips</a>
 
-I added some of my own functionality not included in the tutorial. See the demo and play with it. 
+I added some of my own functionality not included in the tutorial. See the <a href="http://steveboard.meteor.com/" target="_blank"> demo</a> and play with it. 
 
 Important!
 
