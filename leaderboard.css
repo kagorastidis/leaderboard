@@ -1,0 +1,129 @@
+/* CSS declarations go here */
+
+
+body{
+	height: 800px;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+	background: tomato;
+	flex-direction:column;
+}
+
+
+.card{
+	background: #fff;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.3);
+	padding-left: 5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-right: 5%;
+	font-size: 16px;
+
+}
+
+table{
+	width:100%;
+}
+
+
+
+th{
+	padding: 30px;
+	text-align: center;
+}
+
+tr{
+	transition:all .2s ease;
+	text-align: center;
+	font-weight: 300;
+}
+
+tr:hover{
+	cursor: pointer;
+	font-weight: 800;
+
+}
+
+.active{
+	font-weight: bold;
+}
+
+
+
+input{
+	font-size: 16px;
+	
+}
+
+input[type:text], input[type:number]{
+
+	border: 1px solid #ccc;
+	border-radius: 5px;
+
+}
+
+form{
+	margin-top: 10px;
+}
+
+.selected{
+	text-align: center;
+	background: #fff;
+	margin-bottom: 10px;
+	font-size: 20px;
+	position: relative;
+	top:-15%;
+	padding: 0 15px 0 15px;
+	box-shadow: 0 3px 15px rgba(0,0,0,0.3);
+
+}
+
+#login{
+	color: #1b1b1b;
+	padding: 12px;
+	text-align: center;
+	font-size: 16px;
+	border-bottom: 1px solid #1b1b1b;
+	
+}
+
+
+#login-buttons{
+	color: #fff;
+}
+
+#login_msg{
+	padding: 12px;
+	margin-top: 15px;
+	text-align: center;
+	font-size: 14px;
+}
+
+.delete,.increment,.decrease{
+	background: transparent;
+	border: none;
+	font-weight: 300;
+	transition: all .5s ease;
+}
+
+.delete:hover{
+	font-weight: 900;
+}
+
+@media(max-width:500px){
+	table{
+		transform:scale(0.7);
+		margin-left: -70px;
+		padding: 20px;
+	}
+
+	.form-control{
+		max-width: 80% !important;
+}
+
+.card{
+	max-width: 91%;
+}
+
+}

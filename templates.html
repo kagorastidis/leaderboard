@@ -1,0 +1,50 @@
+<template name="leaderboard">
+
+	
+{{#if selected}}
+    <div class="selected">{{selected}} <br>{{count}} </div>
+{{/if}}  
+
+<div id="login">Current User: {{> loginButtons}}</div>
+
+
+	<table class="table">
+		<thead>
+		<th>Name</th>
+		<th>Score</th>
+		<th>Created by</th>
+		</thead>
+
+
+    {{#each player}}<tbody><tr class={{activeClass}}><td>{{name}}</td><td>{{score}}</td><td>{{created_by}}</td><td><input type="button" class="increment" value={{btnMessage}}></td><td><input class="decrease" type="button" value="-"></td><td><input type="button" class="delete" value="x"></td></tr></tbody>{{/each}}
+
+	</table>
+
+	
+	
+
+</template>
+
+
+<template name="addPlayerform">
+ {{#if currentUser}}
+	<form>
+		<div class="row">
+		<div class="col-sm-4">
+        <input class="form-control" type="text" name="playerName" required placeholder="player name">
+	    </div>
+	    <div class="col-sm-4">
+        <input class="form-control" type="number" name="playerScore" required placeholder="player score">
+	    </div>
+	    <div class="col-sm-4">
+        <input type="submit" value="Add Player" class="btn-success">
+	    </div>
+    </div>
+    </form>
+    {{else}}
+
+<div id="login_msg" class="alert alert-danger">must login to add/modify players</div>
+{{/if}}
+
+
+</template>
